@@ -201,8 +201,57 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
+  projects: [
+    {
+      community: "UX Shiraz",
+      image: require("./assets/images/uxshiraz.jpeg"),
+      projectName: "Ux Shiraz website",
+      date: "Dec 2019 - Present",
+      projectDesc:
+        "UX Shiraz is the largest association in Iran which is widely active in user experience design",
+      descBullets: [
+        "rebuild the website"
+      ],
+      footerLink: [
+        {
+          name: "Visit website",
+          url: "https://uxshiraz.org"
+        }
+      ]
+    },
+    {
+      community: "UX Shiraz",
+      image: require("./assets/images/hamanesh.png"),
+      projectName: "Hamanesh",
+      date: "Dec 2019 - Present",
+      projectDesc:
+        "The Online Game for ack Question",
+      descBullets: [],
+      footerLink: [
+        {
+          name: "Visit source",
+          url: "https://gitlab.com/uxshiraz/hamanesh"
+        }
+      ]
+    },
+    {
+      community: "UX Shiraz",
+      image: null,
+      projectName: "Event platform",
+      date: "Dec 2020 - Present",
+      projectDesc:
+        "The Online Eventing system",
+      descBullets: [],
+      footerLink: [
+        {
+          name: "Visit source",
+          url: "https://gitlab.com/uxshiraz/event-platform"
+        }
+      ]
+    }
+  ],
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on

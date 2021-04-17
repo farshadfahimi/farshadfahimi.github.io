@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.css";
 import Button from "../../components/button/Button";
+import OpenSourceProject from '../../components/openSourceProject/OpenSourceProject';
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
@@ -40,6 +41,7 @@ export default function Projects() {
   function setrepoFunction(array) {
     setrepo(array);
   }
+
   if (
     !(typeof repo === "string" || repo instanceof String) &&
     openSource.display
@@ -53,6 +55,11 @@ export default function Projects() {
               return (
                 <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
               );
+            })}
+            {openSource.projects.map((project, i) => {
+              return (
+                <OpenSourceProject project={project} key={`open-source-${i}`} isDark={isDark}/>
+              )
             })}
           </div>
           <Button
