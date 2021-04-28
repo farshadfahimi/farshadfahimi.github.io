@@ -288,7 +288,18 @@ const bigProjects = {
       projectName: "Fafait Admin panel",
       projectDesc: "Advance admin panel for manage all of the fafait store",
       footerLink: []
-    }
+    },
+    {
+      image: require("./assets/images/irsa.png"),
+      projectName: "Irsa",
+      projectDesc: "IRSA Clinic,Specialized Clinic of Beauty, Hair and Skin (Dermatology) and Hair Transplantation ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://irsa.clinic/"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
